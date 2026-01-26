@@ -10,7 +10,7 @@ import { useTheme } from '../hooks/useTheme';
 import { AppText } from './AppText';
 import { AppIcon } from './AppIcon';
 import { spacing } from '../constants/spacing';
-import { sizing } from '../constants/sizing';
+import { sizing } from '../constants/size';
 
 export interface NavItem {
   label: string;

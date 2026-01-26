@@ -11,7 +11,7 @@ import { AppText } from './AppText';
 import { AppIcon } from './AppIcon';
 import { spacing } from '../constants/spacing';
 import { radius } from '../constants/radius';
-import { sizing } from '../constants/sizing';
+import { sizing } from '../constants/size';
 
 export interface QuickActionButtonProps {
   label: string;

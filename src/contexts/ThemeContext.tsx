@@ -6,7 +6,7 @@
 
 import React, { createContext, useContext, useState, useMemo, ReactNode } from 'react';
 import { useColorScheme } from 'react-native';
-import { colors, ThemeColors } from '../constants/colors';
+import { colorPalettes, ThemeColors } from '../constants/colors';
 import { createGlobalStyle, GlobalStyles } from '../styles/globalStyle';
 
 export type ThemeMode = 'light' | 'dark';
@@ -40,20 +40,8 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({
   );
 
   // Theme colors based on current mode
-  // In a real app, you'd have separate dark/light color palettes
   const themeColors = useMemo<ThemeColors>(() => {
-    if (themeMode === 'dark') {
-      // Dark theme colors (can be extended with actual dark palette)
-      return {
-        ...colors,
-        background: '#000000',
-        backgroundSecondary: '#1C1C1E',
-        textPrimary: '#FFFFFF',
-        textSecondary: '#8E8E93',
-        border: '#38383A',
-      };
-    }
-    return colors;
+    return colorPalettes[themeMode];
   }, [themeMode]);
 
   const globalStyles = useMemo(
