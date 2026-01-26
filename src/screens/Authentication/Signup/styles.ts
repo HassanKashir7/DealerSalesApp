@@ -6,7 +6,7 @@
 import { StyleSheet } from 'react-native';
 import { spacing } from '../../../constants/spacing';
 import { radius } from '../../../constants/radius';
-import { sizing } from '../../../constants/sizing';
+import { sizing } from '../../../constants/size';
 import { typography } from '../../../constants/typography';
 
 export const styles = StyleSheet.create({

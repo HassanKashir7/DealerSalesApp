@@ -5,12 +5,9 @@
  */
 
 import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
-import { colors } from '../constants/colors';
+import { colors, ThemeColors } from '../constants/colors';
 import { typography } from '../constants/typography';
-import { spacing } from '../constants/spacing';
-import { radius } from '../constants/radius';
-
-export type ThemeColors = typeof colors;
+import { spacing } from '../constants';
 
 export interface GlobalStyles {
   container: ViewStyle;
@@ -36,7 +33,7 @@ export const createGlobalStyle = (
   return StyleSheet.create<GlobalStyles>({
     container: {
       flex: 1,
-      backgroundColor: themeColors.background,
+      backgroundColor: themeColors.background.primary,
     },
     centerContent: {
       justifyContent: 'center',
@@ -53,27 +50,27 @@ export const createGlobalStyle = (
     },
     text: {
       ...typography.textStyle.body,
-      color: themeColors.textPrimary,
+      color: themeColors.text.primary,
     },
     heading: {
       ...typography.textStyle.heading,
-      color: themeColors.textPrimary,
+      color: themeColors.text.primary,
     },
     subheading: {
       ...typography.textStyle.subheading,
-      color: themeColors.textPrimary,
+      color: themeColors.text.primary,
     },
     body: {
       ...typography.textStyle.body,
-      color: themeColors.textPrimary,
+      color: themeColors.text.primary,
     },
     caption: {
       ...typography.textStyle.caption,
-      color: themeColors.textSecondary,
+      color: themeColors.text.secondary,
     },
   });
 };
 
-// Export spacing and radius for direct use in components
-export { spacing, radius, typography };
+// Export spacing and typography for direct use in components
+export { spacing, typography };
 

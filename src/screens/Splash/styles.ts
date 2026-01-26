@@ -5,7 +5,7 @@
 
 import { StyleSheet } from 'react-native';
 import { spacing } from '../../constants/spacing';
-import { sizing } from '../../constants/sizing';
+import { sizing } from '../../constants/size';
 
 export const styles = StyleSheet.create({
   container: {
