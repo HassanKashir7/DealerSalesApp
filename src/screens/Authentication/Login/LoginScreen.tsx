@@ -12,7 +12,7 @@ import { useTheme } from '../../../hooks/useTheme';
 import { useAuth } from '../../../hooks/useAuth';
 import { AppButton, AppText, AppInput, AppIcon } from '../../../components';
 import { spacing } from '../../../constants/spacing';
-import { sizing } from '../../../constants/sizing';
+import { sizing } from '../../../constants/size';
 import { styles as screenStyles } from './styles';
 
 const CanonLogo = require('../../../assets/images/canon-logo.png');

@@ -12,7 +12,7 @@ import { AppIcon } from './AppIcon';
 import { spacing } from '../constants/spacing';
 import { radius } from '../constants/radius';
 import { typography } from '../constants/typography';
-import { sizing } from '../constants/sizing';
+import { sizing } from '../constants/size';
 
 export interface MetricCardProps {
   title: string;
